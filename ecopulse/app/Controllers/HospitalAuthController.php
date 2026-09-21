@@ -27,6 +27,7 @@ class HospitalAuthController extends Controller {
             return;
         }
         
+        // 1. Check Hospital User
         $userModel = new HospitalUser();
         $user = $userModel->findByUsername($username);
         
@@ -55,19 +56,30 @@ class HospitalAuthController extends Controller {
             $activityLog->log('hospital', $user['id'], 'login', 'Hospital user logged in');
             
             $this->redirect('/hospital/dashboard');
-        } else {
-            $adminModel = new Admin();
-            $admin = $adminModel->findBy('email', $username);
-
-            if ($admin) {
-                Session::flash('This email belongs to an Admin account. We have redirected you to the Admin Portal.', 'error');
-                $this->redirect('/admin/login');
-                return;
-            }
-
-            Session::flash('Invalid credentials.', 'danger');
-            $this->redirect('/hospital/login');
+            return;
         }
+
+        // 2. Check Admin User (Auto-login and direct to admin dashboard)
+        $adminModel = new Admin();
+        $admin = $adminModel->findBy('email', $username);
+
+        if ($admin && Auth::verifyPassword($password, $admin['password'])) {
+            Auth::login([
+                'id' => $admin['id'],
+                'name' => $admin['name'],
+                'email' => $admin['email'],
+                'role' => 'admin'
+            ]);
+
+            $activityLog = new ActivityLog();
+            $activityLog->log('admin', $admin['id'], 'login', 'Admin logged in via unified login.');
+
+            $this->redirect('/admin/dashboard');
+            return;
+        }
+
+        Session::flash('Invalid credentials.', 'danger');
+        $this->redirect('/hospital/login');
     }
     
     public function logout() {

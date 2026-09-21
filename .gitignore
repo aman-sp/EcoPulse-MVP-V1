@@ -1,0 +1,26 @@
+﻿# Environment and sensitive settings
+.env
+*.env.local
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencies
+/vendor/
+/ecopulse/vendor/
+node_modules/
+
+# Logs and runtime caches
+*.log
+/storage/logs/
+/ecopulse/storage/logs/
+/ecopulse/storage/cache/
+/ecopulse/storage/sessions/
+
+# IDE / Editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

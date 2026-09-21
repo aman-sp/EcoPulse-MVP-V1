@@ -1,0 +1,50 @@
+[data-theme="dark"] {
+    --color-bg: #0F172A;
+    --color-surface: #1E293B;
+    --color-surface-hover: #334155;
+    --color-border: #334155;
+    --color-text: #F1F5F9;
+    --color-text-secondary: #94A3B8;
+    --color-text-muted: #64748B;
+    
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4), 0 2px 4px -2px rgba(0,0,0,0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.4), 0 4px 6px -4px rgba(0,0,0,0.4);
+    
+    --color-primary-bg: rgba(16, 185, 129, 0.1);
+    --color-success-bg: rgba(16, 185, 129, 0.1);
+    --color-info-bg: rgba(59, 130, 246, 0.1);
+    --color-warning-bg: rgba(245, 158, 11, 0.1);
+    --color-danger-bg: rgba(244, 63, 94, 0.1);
+}
+
+[data-theme="dark"] .sidebar {
+    background-color: #0B1120;
+}
+
+[data-theme="dark"] .header {
+    background-color: #1E293B;
+}
+
+[data-theme="dark"] .search-box__input {
+    background-color: #0F172A;
+    color: #F1F5F9;
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+    background-color: #0F172A;
+    color: #F1F5F9;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .wizard,
+[data-theme="dark"] .modal__content,
+[data-theme="dark"] .dropdown__menu,
+[data-theme="dark"] .toast {
+    background-color: #1E293B;
+}
+
+[data-theme="dark"] .wizard__step-number {
+    background-color: #0F172A;
+}

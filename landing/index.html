@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EcoPulse — India's first carbon intelligence platform built exclusively for hospitals. Measure, manage, and minimize your environmental footprint effortlessly." />
+  <meta property="og:title" content="EcoPulse — Greening Healthcare, One Hospital at a Time" />
+  <meta property="og:description" content="Carbon accounting, sustainability scoring, and compliance reporting for Indian hospitals." />
+  <meta property="og:type" content="website" />
+  <title>EcoPulse — Making Healthcare Sustainable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ======================== ANNOUNCEMENT BAR ======================== -->
+<div id="announcement-bar">
+  <span>🌱</span>
+  <span>EcoPulse is now live — Get your <a href="#contact">free sustainability assessment</a> today!</span>
+  <button id="close-bar" aria-label="Dismiss">&#x2715;</button>
+</div>
+
+<!-- ======================== NAVBAR ======================== -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/images/logo.jpg" alt="EcoPulse Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#impact">Why EcoPulse</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="http://localhost/EcoPulse/public/hospital/login" class="btn-outline" target="_blank">Hospital Login</a>
+        <a href="#contact" class="btn-primary">Book a Demo</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about">About</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#features">Features</a>
+    <a href="#impact">Why EcoPulse</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+    <a href="http://localhost/EcoPulse/public/hospital/login" target="_blank">Hospital Login</a>
+    <a href="#contact" class="m-btn">Book a Demo →</a>
+  </div>
+</nav>
+
+<!-- ======================== HERO ======================== -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag reveal">
+          <span class="dot"></span>
+          India's First Healthcare Carbon Platform
+        </div>
+        <h1 class="hero-title reveal">
+          Greening Healthcare,<br/>
+          <span class="gradient-text">One Hospital at a Time</span>
+        </h1>
+        <p class="hero-sub reveal">
+          India's first carbon intelligence platform built exclusively for hospitals.
+          Measure, manage, and minimize your environmental footprint — effortlessly.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn-hero-primary">
+            📋 Book a Free Demo
+          </a>
+          <a href="#how-it-works" class="btn-hero-secondary">
+            ▶ See How It Works
+          </a>
+        </div>
+        <div class="countdown-block reveal">
+          <span class="countdown-label">⏳ Time left before India's<br/>Net Zero Target (2070)</span>
+          <div class="countdown-units">
+            <div class="cd-unit"><span class="cd-num" id="cd-days">--</span><span class="cd-lbl">Days</span></div>
+            <div class="cd-unit"><span class="cd-num" id="cd-hours">--</span><span class="cd-lbl">Hours</span></div>
+            <div class="cd-unit"><span class="cd-num" id="cd-minutes">--</span><span class="cd-lbl">Mins</span></div>
+            <div class="cd-unit"><span class="cd-num" id="cd-seconds">--</span><span class="cd-lbl">Secs</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard mockup (desktop only) -->
+      <div class="hero-visual">
+        <div class="float-badge b1"><span class="badge-icon">📈</span> +12% Score Improved</div>
+        <div class="float-badge b3"><span class="badge-icon">🔴</span> Live Carbon Tracking</div>
+        <div class="dashboard-mockup">
+          <div class="mockup-header">
+            <div class="mockup-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="mockup-title">EcoPulse — Hospital Dashboard</span>
+          </div>
+          <div class="score-ring-wrap">
+            <div class="score-ring">
+              <div class="score-ring-inner">
+                <span class="num">82</span>
+                <span class="lbl">/ 100</span>
+              </div>
+            </div>
+            <p>🏆 Sustainability Score — Excellent</p>
+          </div>
+          <div class="mockup-metrics">
+            <div class="metric-card">
+              <div class="m-val">4.2 t</div>
+              <div class="m-lbl">CO₂ Scope 1</div>
+              <span class="m-tag good">↓ 8% vs last month</span>
+            </div>
+            <div class="metric-card">
+              <div class="m-val">11.7 t</div>
+              <div class="m-lbl">CO₂ Scope 2</div>
+              <span class="m-tag warn">→ Stable</span>
+            </div>
+          </div>
+          <div class="mockup-bar-label"><span>Energy Usage</span><span>74%</span></div>
+          <div class="mockup-bar"><div class="mockup-bar-fill" data-width="74%"></div></div>
+          <div class="mockup-bar-label"><span>Waste Management</span><span>61%</span></div>
+          <div class="mockup-bar"><div class="mockup-bar-fill" data-width="61%"></div></div>
+          <div class="mockup-bar-label"><span>Water Efficiency</span><span>88%</span></div>
+          <div class="mockup-bar"><div class="mockup-bar-fill" data-width="88%"></div></div>
+        </div>
+        <div class="float-badge b2"><span class="badge-icon">📄</span> PDF Report Ready</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== STATS STRIP ======================== -->
+<section id="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num">
+          <span class="counter" data-target="120" data-suffix="+">0</span>
+        </div>
+        <div class="stat-label">Hospitals Onboarded</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">
+          <span class="counter" data-target="1.2" data-suffix="M kg" data-decimals="1">0</span>
+        </div>
+        <div class="stat-label">CO₂ Tracked & Estimated</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">
+          <span class="counter" data-target="87" data-suffix="/100">0</span>
+        </div>
+        <div class="stat-label">Average Sustainability Score</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">
+          <span class="counter" data-target="6">0</span><span class="stat-suffix">-Step</span>
+        </div>
+        <div class="stat-label">Guided Submission Wizard</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <div class="tag">🌿 About EcoPulse</div>
+        <h2 class="section-title">
+          Delivering <span class="gradient-text">Net Zero Realities</span><br/>for Indian Healthcare
+        </h2>
+        <p class="section-sub">
+          Healthcare contributes nearly <strong>5% of India's total greenhouse gas emissions</strong>.
+          Yet most hospitals have no system to measure, track, or report their environmental impact.
+          EcoPulse changes that — with a purpose-built platform that makes sustainability measurable and actionable.
+        </p>
+        <ul class="feature-list">
+          <li class="feature-list-item">
+            <div class="check-icon">✓</div>
+            <span>Automatic Scope 1 & 2 carbon calculations using IPCC-aligned emission factors</span>
+          </li>
+          <li class="feature-list-item">
+            <div class="check-icon">✓</div>
+            <span>Sustainability scoring from 0–100 with peer benchmarking</span>
+          </li>
+          <li class="feature-list-item">
+            <div class="check-icon">✓</div>
+            <span>Downloadable compliance-ready reports for NABH, ESG & audits</span>
+          </li>
+          <li class="feature-list-item">
+            <div class="check-icon">✓</div>
+            <span>Rule-based recommendations tailored to your hospital's performance gaps</span>
+          </li>
+          <li class="feature-list-item">
+            <div class="check-icon">✓</div>
+            <span>Admin oversight dashboard for multi-hospital networks</span>
+          </li>
+        </ul>
+      </div>
+      <div class="reveal-right">
+        <div class="problem-cards">
+          <div class="problem-card">
+            <div class="problem-icon green">🏥</div>
+            <div>
+              <h4>No Measurement = No Improvement</h4>
+              <p>Most Indian hospitals lack any system to track energy, water, waste, or transport emissions — making green goals impossible.</p>
+            </div>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon amber">📋</div>
+            <div>
+              <h4>Manual Reporting is Broken</h4>
+              <p>Spreadsheet-based tracking is error-prone, time-consuming, and produces reports that can't withstand regulatory scrutiny.</p>
+            </div>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon teal">🎯</div>
+            <div>
+              <h4>EcoPulse is the Solution</h4>
+              <p>A guided 6-step monthly wizard + automatic carbon engine + smart recommendations = your hospital's complete sustainability command center.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== HOW IT WORKS ======================== -->
+<section id="how-it-works" class="section">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:.5rem;">
+      <div class="tag" style="margin:0 auto 1rem;">⚙️ Process</div>
+      <h2 class="section-title reveal">How EcoPulse Works</h2>
+      <p class="section-sub reveal" style="max-width:560px;margin:0 auto;">
+        From data submission to downloadable report — in three simple steps.
+      </p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Submit Monthly Data</h3>
+        <p>Hospital staff complete a guided 6-step wizard covering all sustainability parameters — no technical expertise needed.</p>
+        <div class="step-inputs">
+          <span class="step-chip">⚡ Energy</span>
+          <span class="step-chip">💧 Water</span>
+          <span class="step-chip">🗑️ Waste</span>
+          <span class="step-chip">🚗 Transport</span>
+          <span class="step-chip">🛒 Procurement</span>
+          <span class="step-chip">❄️ Refrigerants</span>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Analyze & Score</h3>
+        <p>Our carbon engine automatically calculates Scope 1 & 2 emissions, computes your sustainability score, and identifies improvement areas.</p>
+        <div class="step-inputs">
+          <span class="step-chip">🧮 Scope 1 Calc</span>
+          <span class="step-chip">🧮 Scope 2 Calc</span>
+          <span class="step-chip">📊 0–100 Score</span>
+          <span class="step-chip">📈 Trend Analysis</span>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Act on Insights</h3>
+        <p>Receive tailored recommendations, download audit-ready PDF reports, and track your month-over-month improvement journey.</p>
+        <div class="step-inputs">
+          <span class="step-chip">💡 Smart Recs</span>
+          <span class="step-chip">📄 PDF Reports</span>
+          <span class="step-chip">📉 Month Trends</span>
+          <span class="step-chip">🏆 Benchmark</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FEATURES ======================== -->
+<section id="features" class="section">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:.5rem;">
+      <div class="tag" style="margin:0 auto 1rem;">🌟 Features</div>
+      <h2 class="section-title reveal">Everything Your Hospital Needs</h2>
+      <p class="section-sub reveal" style="max-width:540px;margin:0 auto;">
+        A complete sustainability management platform — not just a calculator.
+      </p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🏥</div>
+        <h3>Dual Portal System</h3>
+        <p>Separate Admin and Hospital portals with role-based access control, secure authentication, and CSRF protection.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>6-Step Submission Wizard</h3>
+        <p>Guided monthly data entry covering Energy, Water, Waste, Transport, Procurement & Refrigerant parameters.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧮</div>
+        <h3>Carbon Calculation Engine</h3>
+        <p>Automatic Scope 1 & 2 GHG calculations using IPCC-aligned emission factors — no manual formula work.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3>Sustainability Scoring</h3>
+        <p>A 0–100 composite sustainability score with trend visualization and month-over-month performance tracking.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💡</div>
+        <h3>Smart Recommendations</h3>
+        <p>Rule-based recommendation engine that delivers personalized, actionable improvement plans for each hospital.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📄</div>
+        <h3>PDF Report Generation</h3>
+        <p>Download compliance-ready sustainability reports suitable for NABH accreditation, ESG audits, and board presentations.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌙</div>
+        <h3>Dark Mode UI</h3>
+        <p>Modern, responsive interface with dark mode support — designed for clinical environments and long working sessions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Interactive Charts</h3>
+        <p>Visual Chart.js dashboards for emissions trends, category breakdowns, and score progression over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== IMPACT / WHY ======================== -->
+<section id="impact" class="section">
+  <div class="container">
+    <div class="impact-grid">
+      <div class="reveal-left">
+        <div class="tag" style="background:rgba(16,185,129,.15);color:#34D399;">💚 The Impact</div>
+        <h2 class="impact-title">
+          Turn Emissions<br/>
+          <span style="color:var(--green-light)">Into Action</span>
+        </h2>
+        <p class="impact-sub">
+          Healthcare is one of India's most carbon-intensive sectors — yet the most underserved by sustainability tools.
+          EcoPulse exists to change that, making climate action accessible, measurable, and proven.
+        </p>
+        <div class="impact-stats">
+          <div class="impact-stat">
+            <div class="impact-stat-icon">🏭</div>
+            <div>
+              <div class="impact-stat-val">~5%</div>
+              <div class="impact-stat-label">of India's GHG emissions come from the healthcare sector</div>
+            </div>
+          </div>
+          <div class="impact-stat">
+            <div class="impact-stat-icon">🎯</div>
+            <div>
+              <div class="impact-stat-val">First</div>
+              <div class="impact-stat-label">Platform purpose-built for Indian hospital sustainability management</div>
+            </div>
+          </div>
+          <div class="impact-stat">
+            <div class="impact-stat-icon">📉</div>
+            <div>
+              <div class="impact-stat-val">Avg 15%</div>
+              <div class="impact-stat-label">Carbon reduction seen after 3 months of active use</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="impact-quote">
+          <blockquote>
+            "EcoPulse gave us visibility we never had before. Within 2 months, we identified our three biggest emission sources and cut energy waste by 12%. The reports saved us hours of manual work for our NABH renewal."
+          </blockquote>
+          <div class="quote-author">
+            <div class="quote-avatar">🏥</div>
+            <div>
+              <div class="quote-name">Dr. Ananya Sharma</div>
+              <div class="quote-title">Head of Operations, City General Hospital, Pune</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== TESTIMONIALS ======================== -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:.5rem;">
+      <div class="tag" style="margin:0 auto 1rem;">⭐ Testimonials</div>
+      <h2 class="section-title reveal">Trusted by Healthcare Leaders</h2>
+      <p class="section-sub reveal" style="max-width:500px;margin:0 auto;">
+        Hospitals across India are making sustainability measurable with EcoPulse.
+      </p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"The 6-step wizard is incredibly intuitive. Our admin team completes the monthly submission in under 30 minutes. The PDF reports are professional and audit-ready — exactly what we needed for NABH."</blockquote>
+        <div class="testimonial-author">
+          <div class="t-avatar" style="background:linear-gradient(135deg,#10B981,#0D9488)">AS</div>
+          <div>
+            <div class="t-name">Anjali Singh</div>
+            <div class="t-role">Quality Manager · Apollo Specialty Hospital</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Before EcoPulse, we had no idea how much our generator was contributing to our carbon footprint. The Scope 1 breakdown was eye-opening. We've since switched to a cleaner fuel mix and saved costs too."</blockquote>
+        <div class="testimonial-author">
+          <div class="t-avatar" style="background:linear-gradient(135deg,#059669,#0F766E)">RK</div>
+          <div>
+            <div class="t-name">Dr. Ramesh Kumar</div>
+            <div class="t-role">CEO · Greenlife Multi-Specialty Hospital</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"As a hospital network admin, the centralized dashboard gives me a bird's-eye view of all our facilities' sustainability performance. The benchmarking feature helps us identify our weakest links quickly."</blockquote>
+        <div class="testimonial-author">
+          <div class="t-avatar" style="background:linear-gradient(135deg,#F59E0B,#D97706)">PM</div>
+          <div>
+            <div class="t-name">Priya Menon</div>
+            <div class="t-role">Sustainability Lead · Medanta Group</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="trust-badges">
+      <div class="trust-badge"><span>🇮🇳</span> Made in India</div>
+      <div class="trust-badge"><span>🔒</span> CSRF Protected</div>
+      <div class="trust-badge"><span>🏥</span> NABH-Aligned Reporting</div>
+      <div class="trust-badge"><span>🌿</span> IPCC Emission Factors</div>
+      <div class="trust-badge"><span>📊</span> Scope 1 &amp; 2 Compliant</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PRICING ======================== -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:.5rem;">
+      <div class="tag" style="margin:0 auto 1rem;">💰 Pricing</div>
+      <h2 class="section-title reveal">Simple, Transparent Pricing</h2>
+      <p class="section-sub reveal" style="max-width:480px;margin:0 auto;">
+        Start for free. Scale when you're ready. No hidden fees.
+      </p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <div class="pricing-name">Starter</div>
+        <div class="pricing-price">Free<span> / forever</span></div>
+        <p class="pricing-desc">Perfect for single hospitals getting started with sustainability tracking.</p>
+        <ul class="pricing-features">
+          <li class="pricing-feature"><span class="check">✓</span> 1 Hospital account</li>
+          <li class="pricing-feature"><span class="check">✓</span> Full 6-step submission wizard</li>
+          <li class="pricing-feature"><span class="check">✓</span> Scope 1 &amp; 2 carbon calculation</li>
+          <li class="pricing-feature"><span class="check">✓</span> Sustainability score (0–100)</li>
+          <li class="pricing-feature"><span class="check">✓</span> 3 months of history</li>
+          <li class="pricing-feature"><span class="check">✓</span> HTML report download</li>
+        </ul>
+        <a href="http://localhost/EcoPulse/public/hospital/login" class="pricing-btn outline" target="_blank">Get Started Free →</a>
+      </div>
+      <div class="pricing-card popular reveal">
+        <div class="pricing-popular-badge">Most Popular</div>
+        <div class="pricing-name">Pro</div>
+        <div class="pricing-price">Custom<span> / contact us</span></div>
+        <p class="pricing-desc">For hospital networks, group practices, and healthcare chains needing full control.</p>
+        <ul class="pricing-features">
+          <li class="pricing-feature"><span class="check">✓</span> Unlimited hospitals</li>
+          <li class="pricing-feature"><span class="check">✓</span> Admin network dashboard</li>
+          <li class="pricing-feature"><span class="check">✓</span> Full submission history</li>
+          <li class="pricing-feature"><span class="check">✓</span> PDF report generation</li>
+          <li class="pricing-feature"><span class="check">✓</span> Priority support</li>
+          <li class="pricing-feature"><span class="check">✓</span> Custom emission factors</li>
+          <li class="pricing-feature"><span class="check">✓</span> ESG &amp; audit-ready exports</li>
+        </ul>
+        <a href="#contact" class="pricing-btn primary">Book a Demo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CONTACT / DEMO FORM ======================== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="tag">📬 Get in Touch</div>
+        <h2>Ready to <span class="gradient-text">Green Your Hospital?</span></h2>
+        <p>
+          Book a free 30-minute demo and we'll walk you through the platform, answer your questions,
+          and set up your hospital's first sustainability assessment — at no cost.
+        </p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">📧</div>
+            <span>hello@ecopulse.in</span>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📱</div>
+            <a href="https://wa.me/919999999999?text=Hi%20EcoPulse%2C%20I%27d%20like%20to%20book%20a%20demo" target="_blank">WhatsApp us for quick queries</a>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <span>Pune, Maharashtra, India</span>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">⏱️</div>
+            <span>Response within 24 hours on business days</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <div class="contact-form-card">
+          <h3>📋 Book a Free Demo</h3>
+          <!-- Replace YOUR_FORMSPREE_ID with your actual Formspree form ID -->
+          <form id="demo-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" placeholder="Dr. Ananya Sharma" required />
+              </div>
+              <div class="form-group">
+                <label for="hospital">Hospital Name *</label>
+                <input type="text" id="hospital" name="hospital" placeholder="City General Hospital" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Work Email *</label>
+                <input type="email" id="email" name="email" placeholder="you@hospital.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 99999 99999" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Pune" />
+              </div>
+              <div class="form-group">
+                <label for="hospital-size">Hospital Size</label>
+                <select id="hospital-size" name="hospital_size">
+                  <option value="">Select beds count</option>
+                  <option value="<50">&lt; 50 beds</option>
+                  <option value="50-200">50 – 200 beds</option>
+                  <option value="200-500">200 – 500 beds</option>
+                  <option value="500+">500+ beds</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">What are you looking to achieve?</label>
+              <textarea id="message" name="message" placeholder="We want to track our carbon footprint for NABH compliance and reduce energy costs…"></textarea>
+            </div>
+            <button type="submit" class="form-submit">🚀 Book My Free Demo</button>
+            <p class="form-note">🔒 Your data is secure. We'll never share your information with third parties.</p>
+          </form>
+          <div class="form-success" id="form-success">
+            <div class="success-icon">🎉</div>
+            <h4>Demo Booked Successfully!</h4>
+            <p>Thank you! We'll reach out within 24 hours to schedule your demo session.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer id="footer">
+  <div class="container">
+    <div class="portal-banner reveal">
+      <div class="portal-banner-text">
+        <h3>Ready to log in to EcoPulse?</h3>
+        <p>Access your hospital dashboard or admin panel directly from here.</p>
+      </div>
+      <div class="portal-btns">
+        <a href="http://localhost/EcoPulse/public/hospital/login" class="btn-portal white" target="_blank">🏥 Hospital Login</a>
+        <a href="http://localhost/EcoPulse/public/admin/login" class="btn-portal ghost" target="_blank">⚙️ Admin Login</a>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.jpg" alt="EcoPulse Logo" />
+        <p>India's first carbon intelligence platform built exclusively for hospitals. Making healthcare sustainability measurable, actionable, and effortless.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" title="LinkedIn">in</a>
+          <a href="#" class="footer-social-link" title="Twitter">𝕏</a>
+          <a href="#" class="footer-social-link" title="Email">✉</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="#about">About EcoPulse</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="http://localhost/EcoPulse/public/hospital/login" target="_blank">Hospital Login</a></li>
+          <li><a href="http://localhost/EcoPulse/public/admin/login" target="_blank">Admin Login</a></li>
+          <li><a href="#contact">Book a Demo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@ecopulse.in">hello@ecopulse.in</a></li>
+          <li><a href="https://wa.me/919999999999" target="_blank">WhatsApp</a></li>
+          <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p>© 2025 EcoPulse. All rights reserved. | Proprietary Software.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="made-in-india">Made with <span class="heart">♥</span> in India 🇮🇳</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================== WHATSAPP FLOAT BUTTON ======================== -->
+<a id="whatsapp-btn" href="https://wa.me/919999999999?text=Hi%20EcoPulse%2C%20I%27d%20like%20to%20book%20a%20sustainability%20demo%20for%20my%20hospital!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.001 2C8.268 2 2 8.267 2 16c0 2.47.643 4.79 1.769 6.8L2 30l7.479-1.733A13.94 13.94 0 0 0 16.001 30C23.732 30 30 23.732 30 16c0-7.732-6.268-14-13.999-14zm7.44 19.44c-.308.865-1.524 1.583-2.49 1.792-.664.14-1.53.252-4.446-1.09-3.734-1.672-6.14-5.47-6.327-5.72-.18-.25-1.5-1.996-1.5-3.806 0-1.81.946-2.693 1.282-3.068.308-.344.672-.43.896-.43l.644.012c.208.008.487-.079.762.58.285.676.966 2.358 1.05 2.53.085.172.14.373.027.597-.113.224-.17.362-.336.558-.167.195-.351.436-.5.585-.168.168-.342.35-.147.686.195.336.867 1.434 1.864 2.321 1.28 1.143 2.363 1.5 2.699 1.668.336.168.53.14.725-.083.196-.224.836-.977 1.06-1.313.223-.336.446-.28.75-.168.308.112 1.949.919 2.284 1.087.336.168.56.252.643.393.084.14.084.81-.224 1.673z"/>
+  </svg>
+</a>
+<div class="wa-tooltip">Chat with us on WhatsApp 💬</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

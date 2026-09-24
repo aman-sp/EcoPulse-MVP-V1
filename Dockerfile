@@ -1,7 +1,9 @@
-﻿FROM php:8.2-apache
+FROM php:8.2-apache
 
-# Install PDO MySQL and other necessary extensions
-RUN docker-php-ext-install pdo pdo_mysql
+# Install PDO MySQL, PDO PostgreSQL, and required development libraries
+RUN apt-get update && apt-get install -y libpq-dev \
+    && docker-php-ext-install pdo pdo_mysql pdo_pgsql \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite

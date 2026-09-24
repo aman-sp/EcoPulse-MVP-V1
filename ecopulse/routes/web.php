@@ -67,5 +67,5 @@ Router::get('/hospital/reports', 'HospitalReportController', 'index');
 Router::get('/hospital/reports/download/{id}', 'HospitalReportController', 'download');
 Router::post('/hospital/reports/generate/{id}', 'HospitalReportController', 'generate');
 
-// Default redirect
-Router::get('/', 'AdminAuthController', 'showLogin');
+// Default route: Marketing Landing Page
+Router::get('/', 'LandingController', 'index');

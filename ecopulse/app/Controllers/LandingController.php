@@ -1,6 +1,10 @@
 <?php
 
 class LandingController extends Controller {
+    public function __construct() {
+        // Do not require database connection just to view the landing page
+    }
+
     public function index() {
         $candidates = [
             PUBLIC_PATH . '/landing/index.html',
